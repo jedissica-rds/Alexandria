@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/menu_favoritos">
+    <fragment
+        android:id="@+id/menu_pesquisa"
+        android:name="com.example.alexandria.fragments.Fragment_pesquisa"
+        android:label="fragment_pesquisa"
+        tools:layout="@layout/fragment_pesquisa" />
+    <fragment
+        android:id="@+id/menu_favoritos"
+        android:name="com.example.alexandria.fragments.Fragment_favoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.example.alexandria.fragments.Fragment_home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menu_perfil"
+        android:name="com.example.alexandria.fragments.Fragment_perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/menu_settings"
+        android:name="com.example.alexandria.fragments.Fragment_configuracao"
+        android:label="fragment_configuracao"
+        tools:layout="@layout/fragment_configuracao" />
+</navigation>

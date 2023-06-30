@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/btnEsqueceuSenha"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginEnd="47dp"
+        android:autoText="false"
+        android:backgroundTint="#FFFFFF"
+        android:text="Esqueceu sua senha?"
+        android:textAllCaps="false"
+        android:textColor="#606060"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+    <TextView
+        android:id="@+id/lblEmail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginBottom="12dp"
+        android:text="Nome"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLoginEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginBottom="12dp"
+        android:text="Senha"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLoginSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtview1"
+        android:layout_width="219dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="486dp"
+        android:fontFamily="@font/calistoga"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#856DDA"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <EditText
+        android:id="@+id/txtLoginEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="#9E7ADD"
+        android:textColorLink="#9E7ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtLoginSenha"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnLoginEntrar"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#856DDA"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtviewEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="46dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginSenha" />
+
+    <TextView
+        android:id="@+id/txtviewAlexandria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="165dp"
+        android:fontFamily="@font/roboto"
+        android:text="ALEXANDRIA"
+        android:textColor="#856DDA"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <Button
+        android:id="@+id/btnvoltar"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/seta_voltar"
+        android:paddingLeft="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblEmail4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

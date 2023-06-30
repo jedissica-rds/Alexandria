@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/tab_livros">
+
+    <fragment
+        android:id="@+id/tab_livros"
+        android:name="com.example.alexandria.home_fragments.Fragment_Livros"
+        android:label="fragment__livros"
+        tools:layout="@layout/fragment__livros" >
+        <action
+            android:id="@+id/action_tab_livros_to_tab_divulgacao"
+            app:destination="@id/tab_divulgacao" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab_divulgacao"
+        android:name="com.example.alexandria.home_fragments.Fragment_Divulgacao"
+        android:label="fragment__divulgacao"
+        tools:layout="@layout/fragment__divulgacao" >
+        <action
+            android:id="@+id/action_tab_divulgacao_to_tab_eventos"
+            app:destination="@id/tab_eventos" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab_eventos"
+        android:name="com.example.alexandria.home_fragments.Fragment_Event"
+        android:label="fragment__event"
+        tools:layout="@layout/fragment__event" />
+</navigation>
